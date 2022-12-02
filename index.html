@@ -4,12 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/display.css" />
 	<title>Nomade Vanilla Js Challenge</title>
 </head>
 <body>
 	<div id="wrap">
-			<div class="dashboard">
+		<div class="dashboard">
+			
+			<!-- clock-bx -->
 			<div class="clock-bx"></div>
+			<!-- // clock-bx -->
+			
+			<!-- login-bx -->
 			<div class="login-bx">
 				<form id="loginForm" class="hidden">
 					<input
@@ -20,9 +26,24 @@
 					/>
 					<input type="submit" value="Log In" />
 				</form>
+				<h1 class="hidden" id="greeting"></h1>
 			</div>
-			<div class="todo-bx">ToDo</div>
-			<div class="weather-bx"></div>
+			<!-- // login-bx -->
+			
+			<!-- todo-bx -->
+			<form id="todo-form">
+				<input type="text" placeholder="Write a To Do and Press Enter" required />
+			</form>
+			<ul class="todo-bx hidden"></ul>
+			<!-- // todoBx -->
+			
+			<!-- weather-bx -->
+			<div class="weather-bx">
+				<span></span>
+				<span></span>
+			</div>
+			<!-- // weather-bx -->
+			
 		</div>
 	</div>
 	<script src="js/dashboard.js"></script>
