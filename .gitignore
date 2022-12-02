@@ -96,6 +96,6 @@ sw.*
 /.idea/
 /.vscode/
 /.nuxt/
-/dist/
+/css/
 .sass-cache
 *.bak
