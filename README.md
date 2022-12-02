@@ -1,1 +1,1 @@
-# nomad_vanilajs
+# Nomad_vanillajs
