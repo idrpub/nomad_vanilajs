@@ -7,13 +7,24 @@
 	<title>Nomade Vanilla Js Challenge</title>
 </head>
 <body>
-	<div class="wrap">
+	<div id="wrap">
 			<div class="dashboard">
 			<div class="clock-bx"></div>
-			<div class="login-bx"></div>
-			<div class="todo-bx"></div>
+			<div class="login-bx">
+				<form id="loginForm" class="hidden">
+					<input
+							required
+							maxlength="15"
+							type="text"
+							placeholder="What is your name?"
+					/>
+					<input type="submit" value="Log In" />
+				</form>
+			</div>
+			<div class="todo-bx">ToDo</div>
 			<div class="weather-bx"></div>
 		</div>
 	</div>
+	<script src="js/dashboard.js"></script>
 </body>
 </html>
