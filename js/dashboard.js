@@ -2,11 +2,16 @@
 'use strict'
 //clock
 function getClock() {
-  const clockBx = document.querySelector(".clock-bx");
+  const dateBx = document.querySelector(".clock-bx span:first-child");
+  const clockBx = document.querySelector(".clock-bx span:last-child");
   const date = new Date();
+  const yy = String(date.getFullYear());
+  const mm = String(date.getMonth());
+  const dd = String(date.getDate()).padStart(2, "0");
   const hours = String(date.getHours()).padStart(2, "0");
   const minutes = String(date.getMinutes()).padStart(2, "0");
   const seconds = String(date.getSeconds()).padStart(2, "0");
+  dateBx.innerText = `${dd}/${mm}/${yy}`;
   clockBx.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
@@ -45,7 +50,7 @@ if (savedUsername === null) {
 //toDoList
 const toDoForm = document.querySelector("#todo-form");
 const toDoInput = document.querySelector("#todo-form input");
-const toDoList = document.querySelector(".todo-bx");
+const toDoList = document.querySelector(".todo-list-bx");
 
 const TODOS_KEY = "todos";
 
